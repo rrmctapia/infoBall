@@ -12,7 +12,7 @@ Step 2:
 ```
 Step 3 Replace comments in App.js with your own API key!
 ```bash
-filler
+'x-rapidapi-key': ''//insert your own api key pls!
 ```
 Step 4
 ```bash
