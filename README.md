@@ -5,13 +5,14 @@ Hi welcome to my github! My name is Ravi Tapia and I'm trying to get comfortable
 ## How to run it
 Step 1:  Clone this repository into a new directory using git
 ```bash
+git clone https://github.com/rrmctapia/infoBall.git
 ```
 Step 2:
 ```bash
  npm install
 ```
 Step 3 Replace comments in App.js with your own API key!
-```bash
+```
 'x-rapidapi-key': ''//insert your own api key pls
 ```
 Step 4
