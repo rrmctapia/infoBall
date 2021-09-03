@@ -11,9 +11,9 @@ Step 2:
 ```bash
  npm install
 ```
-Step 3 Replace comments in App.js with your own API key!
+Step 3 Make a .env file in the directory and add your api key!
 ```
-'x-rapidapi-key': ''//insert your own api key pls
+REACT_APP_API_KEY': < INSERT API KEY HERE >
 ```
 Step 4
 ```bash
