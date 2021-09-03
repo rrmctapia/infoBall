@@ -6,7 +6,6 @@ import axios from 'axios'
 import PlayerImage from './components/playerImage';
 
 function App() {
-  const nba_key = process.env.API_KEY;
   const defaultPlayer = {
     firstName: "Select player",
     lastName:"",
@@ -27,18 +26,16 @@ function App() {
   const [text, setText] = useState('');
   const [suggestions, setSuggestions] = useState([]);
   useEffect(() => {
-    const nba_key = process.env.API_KEY;
     const loadUsers = async()=>{
       var options = {
         method:'GET',
         url:'https://nba-player-individual-stats.p.rapidapi.com/players',
         headers:{
           'x-rapidapi-host': 'nba-player-individual-stats.p.rapidapi.com',
-          'x-rapidapi-key': ''//insert your own api key pls!
+          'x-rapidapi-key': process.env.REACT_APP_API_KEY
         }
       }
       axios.request(options).then(function (response){ //this grabs all users( which are players)
-        console.log(response.data);
         setUsers(response.data);
       });
     }
@@ -72,7 +69,7 @@ function App() {
       url: 'https://nba-player-individual-stats.p.rapidapi.com/players/'+id,
       headers: {
         'x-rapidapi-host': 'nba-player-individual-stats.p.rapidapi.com',
-        'x-rapidapi-key': ''//insert your own api key pls!
+        'x-rapidapi-key': process.env.REACT_APP_API_KEY
       }
     };
     
