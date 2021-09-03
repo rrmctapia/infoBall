@@ -13,7 +13,7 @@ Step 2:
 ```
 Step 3 Make a .env file in the directory and add your api key!
 ```
-REACT_APP_API_KEY': < INSERT API KEY HERE >
+REACT_APP_API_KEY: < INSERT API KEY HERE >
 ```
 Step 4
 ```bash
