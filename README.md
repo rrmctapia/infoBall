@@ -21,5 +21,6 @@ npm run start
 ```
 
 
-
+## Enjoy!
+Enjoy the app and let me know of any changes or improvements you'd like to see!
 
